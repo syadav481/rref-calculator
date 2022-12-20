@@ -58,6 +58,8 @@ public:
 				}
 			}
 			lead++;
+			printMatrix();
+			cout << endl;
 		}
 	}
 	void printMatrix()
@@ -141,8 +143,9 @@ public:
 		for (int i = 0; i < matrix.size(); ++i)
 			cout << " ";
 		cout << "\n";
-		cout << "The reduced matrix is...\n";
+		cout << "Steps taken...\n";
 		rref();
+		cout << "The reduced matrix is...\n";
 		printMatrix();
 	}
 };
